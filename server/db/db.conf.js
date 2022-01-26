@@ -2,10 +2,10 @@ const { Pool, Client } = require('pg')
 const path = require('path')
 
 
-const env = process.env.NODE_ENV || 'development'
-if (env === 'development') {
-  require('dotenv').config({ path: path.join(__dirname, './pg.env') })
-}
+// const env = process.env.NODE_ENV || 'development'
+// if (env === 'development') {
+//   require('dotenv').config({ path: path.join(__dirname, './pg.env') })
+// }
 
 const user = process.env.POSTGRES_USER
 const password = process.env.POSTGRES_PASSWORD
